@@ -1,3 +1,6 @@
+/**
+ * @author Olivia McKittrick
+ */
 public class Planet extends CelestialBody {
     private final double distanceFromSun;
 

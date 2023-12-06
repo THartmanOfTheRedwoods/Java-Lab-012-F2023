@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * @author Olivia McKittrick
+ */
 public class SolarSystem {
     private final Sun sun;
     private final List<Planet> planets;
