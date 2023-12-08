@@ -41,18 +41,18 @@ I want you to create a solar-system simulation where you can add planets and, of
 
 ```mermaid
 classDiagram
-    SolarSystem *-- Planet
-    SolarSystem *-- Sun 
-    Simulation --> SolarSystem
+    SolarSystemGPT *-- Planet
+    SolarSystemGPT *-- Sun 
+    Simulation --> SolarSystemGPT
     Simulation --> Planet
     Simulation --> Sun
     class Simulation {
         +main(String[] args)
     }
-    class SolarSystem{
+    class SolarSystemGPT{
       -List~Planet~ planets
       -Sun theSun
-      +SolarSystem()
+      +SolarSystemGPT()
       +addPlanet()
       +addSun()
       +showPlanets()
@@ -98,7 +98,7 @@ classDiagram
 ## Part 3 - Implementation
 
 * From the plan created in Part 2, implement the classes and methods necessary for our simulation.
-* When you get to the SolarSystem movePlanets method you may use the following implementation as your guide (HINT: your sun might not be named theSun):
+* When you get to the SolarSystemGPT movePlanets method you may use the following implementation as your guide (HINT: your sun might not be named theSun):
 ```java
     public void movePlanets() {
         double G = 0.1;
